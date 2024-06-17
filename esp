@@ -39,7 +39,7 @@ local esp = {
     players = {},
     enabled = false,
     teamcheck = true,
-    fontsize = 16,
+    fontsize = 12,
     font = 0,
     settings = {
         name = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)},
@@ -123,7 +123,7 @@ local mainLoop = rs.RenderStepped:Connect(function()
                     v.distance.Text = "[" .. mathfloor((hrp.Position - plr.Character.HumanoidRootPart.Position).Magnitude) .. " studs]"
                     v.distance.Color = esp.settings.distance.color
                     v.distance.OutlineColor = esp.settings.distance.outlineColor
-                    BottomOffset = BottomOffset + 15
+                    BottomOffset = BottomOffset + 17.5
 
                     v.distance.Font = esp.font
                     v.distance.Size = esp.fontsize
