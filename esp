@@ -3,21 +3,18 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
-local esptoggle = "Ú" -- toggle key
-
-
-
+local esptoggle = "p" -- toggle key
 
 --[Main Variables]
 
 local plrs = game["Players"]
-local rs = game["RunService"]
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local UserInputService = game:GetService("UserInputService")
 local Lighting = game:GetService("Lighting")
 local Teams = game:GetService("Teams")
 local RunService = game:GetService("RunService")
+local rs = game:GetService("RunService")
 local TeleportService = game:GetService("TeleportService")
 
 local LocalPlayer = Players.LocalPlayer
