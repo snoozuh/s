@@ -37,7 +37,7 @@ local mathceil = math.ceil
 
 local esp = {
     players = {},
-    enabled = true,
+    enabled = false,
     teamcheck = true,
     fontsize = 16,
     font = 0,
