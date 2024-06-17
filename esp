@@ -42,11 +42,11 @@ local esp = {
     fontsize = 12,
     font = 0,
     settings = {
-        name = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(94, 0, 255)},
-        box = {enabled = true, outline = true, color = Color3fromRGB(131, 105, 165), outlineColor = Color3fromRGB(0, 0, 0)},
-        healthbar = {enabled = true, outline = true, color = Color3fromRGB(111, 0, 255), outlineColor = Color3fromRGB(0, 0, 0)},
-        healthtext = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(94, 0, 255)},
-        distance = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(94, 0, 255)}
+        name = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)},
+        box = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)},
+        healthbar = {enabled = true, outline = true, color = Color3fromRGB(255, 0, 0), outlineColor = Color3fromRGB(0, 0, 0)},
+        healthtext = {enabled = true, outline = true, color = Color3fromRGB(0, 255, 0), outlineColor = Color3fromRGB(0, 0, 0)},
+        distance = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)}
     }
 }
 
