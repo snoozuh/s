@@ -37,16 +37,16 @@ local mathceil = math.ceil
 
 local esp = {
     players = {},
-    enabled = false,
+    enabled = true,
     teamcheck = true,
-    fontsize = 12,
+    fontsize = 16,
     font = 0,
     settings = {
-        name = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)},
-        box = {enabled = true, outline = true, color = Color3fromRGB(255,255,255), outlineColor = Color3fromRGB(0, 0, 0)},
-        healthbar = {enabled = true, outline = true, color = Color3fromRGB(255, 0, 0), outlineColor = Color3fromRGB(0, 0, 0)},
-        healthtext = {enabled = true, outline = true, color = Color3fromRGB(0, 255, 0), outlineColor = Color3fromRGB(0 ,0, 0)},
-        distance = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)}
+        name = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(94, 0, 255)},
+        box = {enabled = true, outline = true, color = Color3fromRGB(131, 105, 165), outlineColor = Color3fromRGB(0, 0, 0)},
+        healthbar = {enabled = true, outline = true, color = Color3fromRGB(111, 0, 255), outlineColor = Color3fromRGB(0, 0, 0)},
+        healthtext = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(94, 0, 255)},
+        distance = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(94, 0, 255)}
     }
 }
 
@@ -120,10 +120,10 @@ local mainLoop = rs.RenderStepped:Connect(function()
                 if esp.settings.distance.enabled and plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
                     v.distance.Position = Vector2new(BoxSize.X / 2 + BoxPos.X, BottomOffset)
                     v.distance.Outline = esp.settings.distance.outline
-                    v.distance.Text = "[" .. mathfloor((hrp.Position - plr.Character.HumanoidRootPart.Position).Magnitude) .. " studs]"
+                    v.distance.Text = "[" .. mathfloor((hrp.Position - plr.Character.HumanoidRootPart.Position).Magnitude) .. "m]"
                     v.distance.Color = esp.settings.distance.color
                     v.distance.OutlineColor = esp.settings.distance.outlineColor
-                    BottomOffset = BottomOffset + 17.5
+                    BottomOffset = BottomOffset + 15
 
                     v.distance.Font = esp.font
                     v.distance.Size = esp.fontsize
