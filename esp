@@ -44,8 +44,8 @@ local esp = {
     settings = {
         name = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)},
         box = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)},
-        healthbar = {enabled = true, outline = true, color = Color3fromRGB(255, 0, 0), outlineColor = Color3fromRGB(0, 0, 0)},
-        healthtext = {enabled = true, outline = true, color = Color3fromRGB(0, 255, 0), outlineColor = Color3fromRGB(0, 0, 0)},
+        healthbar = {enabled = true, outline = true, color = Color3fromRGB(255, 0, 0), outlineColor = Color3fromRGB(255, 0, 0)},
+        healthtext = {enabled = true, outline = true, color = Color3fromRGB(0, 255, 0), outlineColor = Color3fromRGB(0, 255, 0)},
         distance = {enabled = true, outline = true, color = Color3fromRGB(255, 255, 255), outlineColor = Color3fromRGB(0, 0, 0)}
     }
 }
